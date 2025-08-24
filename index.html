@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>SeLaMaT DaTaNg Di WeB KaMi</h1>
+    <p>BIODATA NAMA-NAMA LULUSAN 12.12</p>
+    <button onclick="showBiodata('biodata-aldo')">ALDO RHAMADAN</button>
+    <div id="biodata-aldo" style="display:none; margin-top:10px;">
+        <h2>Biodata ALDO RHAMADAN</h2>
+        <ul>
+            <li>Nama: ALDO RHAMADAN</li>
+            <li>Kelas: 12.12</li>
+            <li>Lulusan: 2025</li>
+            <li>Absen: 1</li>
+        </ul>
+    </div>
+
+    <button onclick="showBiodata('biodata-alfian')">ALFIAN KURNIAWAN</button>
+    <div id="biodata-alfian" style="display:none; margin-top:10px;">
+        <h2>Biodata ALFIAN KURNIAWAN</h2>
+        <ul>
+            <li>Nama: ALFIAN KURNIAWAN</li>
+            <li>Kelas: 12.12</li>
+            <li>Lulusan: 2025</li>
+            <li>Absen: 2</li>
+        </ul>
+    </div>
+
+    <button onclick="showBiodata('biodata-amalia')">AMALIA AL-SAQINA</button>
+    <div id="biodata-amalia" style="display:none; margin-top:10px;">
+        <h2>Biodata AMALIA AL-SAQINA</h2>
+        <ul>
+            <li>Nama: AMALIA AL-SAQINA</li>
+            <li>Kelas: 12.12</li>
+            <li>Lulusan: 2025</li>
+            <li>Absen: 3</li>
+        </ul>
+    </div>
+
+    <script>
+        function showBiodata(id) {
+            // Hide all biodata divs
+            document.querySelectorAll('div[id^="biodata"]').forEach(function(div) {
+                div.style.display = 'none';
+            });
+            // Show selected biodata
+            var el = document.getElementById(id);
+            if (el) el.style.display = 'block';
+        }
+    </script>
+
+
+
+
+
+</body>
+</html>
